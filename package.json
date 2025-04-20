@@ -1,0 +1,16 @@
+{
+  "name": "chatbot-docs-website",
+  "version": "1.0.0",
+  "description": "Documentation website for the Cloud Based Chatbot Generator Platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "documentation",
+    "chatbot",
+    "ai"
+  ],
+  "author": "",
+  "license": "ISC"
+}
