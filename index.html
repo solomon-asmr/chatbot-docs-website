@@ -33,6 +33,10 @@
         flex: 1; /* Allows footer to stick to bottom */
       }
     </style>
+    <!-- Widget styling will be injected by the script -->
+    <style>
+      /* Styles for the widget will be injected by the script */
+    </style>
   </head>
   <body class="bg-light">
     <!-- Navigation Bar (Bootstrap Navbar) -->
@@ -51,9 +55,6 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <!-- Inside the <nav> in index.html -->
-          <!-- Inside the <nav> in index.html -->
-          <!-- Inside the <nav> in index.html -->
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
@@ -68,19 +69,16 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/pages/widget.html">Widget</a>
-              <!-- Added Link -->
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/pages/backend-api.html">Backend API</a>
             </li>
-            <!-- Add more links later -->
             <li class="nav-item">
               <a class="nav-link" href="/pages/crawling-indexing.html"
                 >Crawling</a
               >
             </li>
           </ul>
-          <!-- Optional: Add search or other elements here -->
         </div>
       </div>
     </nav>
@@ -89,29 +87,20 @@
     <main class="container mt-4 mb-5">
       <!-- Page Specific Content Goes Here -->
       <div class="p-4 p-md-5 mb-4 bg-white rounded-3 shadow-sm">
-        <!-- Adjusted padding -->
-        <!-- NO container-fluid div here -->
         <h1 class="display-6 fw-bold mb-4">A. System Description</h1>
-        <!-- Adjusted heading size -->
-
         <p class="lead mb-4">
-          <!-- Use lead for intro paragraph -->
           The platform is a Retrieval-Augmented Generation (RAG) based chatbot
           builder that lets website owners create a custom AI assistant trained
           on their own website content. In essence, it's like having a version
           of ChatGPT tailored to your site – it can instantly answer visitor
           questions using the website’s data as the knowledge base.
         </p>
-
         <p class="mb-3">
           Website owners simply provide their site URL and get an embeddable
           chat widget for their pages.
         </p>
-
         <h2 class="h4 mt-5 mb-3">Key Features:</h2>
-        <!-- Subheading -->
         <ul class="list-group list-group-flush mb-4">
-          <!-- Bootstrap list group -->
           <li class="list-group-item">
             <strong>Voice Input:</strong> Visitors can speak their questions.
           </li>
@@ -124,16 +113,28 @@
             questions about uploaded images or screenshots.
           </li>
         </ul>
-
         <p>
           This ensures a user-friendly experience where, for example,
           non-English speakers can ask in their own language and even upload a
           screenshot with a question, and still receive accurate answers drawn
           from the site’s content.
         </p>
-        <!-- NO closing /div for container-fluid -->
       </div>
     </main>
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-secondary text-white">
+      <div class="container text-center">
+        <span class="text-white">© 2025 sapir. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS (includes Popper) via CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Load Marked and DOMPurify libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"
       defer
@@ -148,23 +149,6 @@
       data-api-key="iVgOJhvHmwSgUf6cE8roVZgW2rcpdKZmKdLNb7R7QXQ"
       defer
     ></script>
-
-    <!-- Footer -->
-    <!-- Footer -->
-    <footer class="footer mt-auto py-3 bg-secondary text-white">
-      <div class="container text-center">
-        <!-- Changed 2023 to 2024 and added 'Test' -->
-        <span class="text-white">© 2025 sapir. All rights reserved.</span>
-      </div>
-    </footer>
-
-    <!-- Bootstrap Bundle JS (includes Popper) via CDN -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
     <!-- Optional: Add custom JS file later -->
     <!-- <script src="js/script.js"></script> -->
   </body>
